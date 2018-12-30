@@ -10,7 +10,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        #GameActivity
+        <!--GameActivity -->
         <activity
             android:name=".GameActivity"
             android:configChanges="orientation|keyboardHidden|keyboard"

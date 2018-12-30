@@ -105,6 +105,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 //Slut spil
             } else if (status == 0) {
                 //Slut spil
+                endGame = true;
             }
         } catch (Exception ex) {
             System.err.println("ERROR!");
@@ -129,53 +130,57 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     System.out.println("Nr. " + test + " is a " + cell);
                 }
                 //buttons[10*i+j].setBackgroundResource(R.drawable.b2);
-
-                switch (cell) {
-                    case 0:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b10);
-                        break;
-                    case 1:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b1);
-                        break;
-                    case 2:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b2);
-                        break;
-                    case 3:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b3);
-                        break;
-                    case 4:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b4);
-                        break;
-                    case 5:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b5);
-                        break;
-                    case 6:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b6);
-                        break;
-                    case 7:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b7);
-                        break;
-                    case 8:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b8);
-                        break;
-                    case 9:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b9);
-                        break;
-                    case 10:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b0);
-                        break;
-                    case 11:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b11);
-                        break;
-                    case 12:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b12);
-                        break;
-                    case 13:
-                        buttons[10 * i + j].setBackgroundResource(R.drawable.b13);
-                        break;
+                changeImg(cell, 10 * i + j);
                 }
             }
         }
+
+    private void changeImg(int imgNr, int fieldID) {
+        switch (imgNr) {
+            case 0:
+                buttons[fieldID].setBackgroundResource(R.drawable.b10);
+                break;
+            case 1:
+                buttons[fieldID].setBackgroundResource(R.drawable.b1);
+                break;
+            case 2:
+                buttons[fieldID].setBackgroundResource(R.drawable.b2);
+                break;
+            case 3:
+                buttons[fieldID].setBackgroundResource(R.drawable.b3);
+                break;
+            case 4:
+                buttons[fieldID].setBackgroundResource(R.drawable.b4);
+                break;
+            case 5:
+                buttons[fieldID].setBackgroundResource(R.drawable.b5);
+                break;
+            case 6:
+                buttons[fieldID].setBackgroundResource(R.drawable.b6);
+                break;
+            case 7:
+                buttons[fieldID].setBackgroundResource(R.drawable.b7);
+                break;
+            case 8:
+                buttons[fieldID].setBackgroundResource(R.drawable.b8);
+                break;
+            case 9:
+                buttons[fieldID].setBackgroundResource(R.drawable.b9);
+                break;
+            case 10:
+                buttons[fieldID].setBackgroundResource(R.drawable.b0);
+                break;
+            case 11:
+                buttons[fieldID].setBackgroundResource(R.drawable.b11);
+                break;
+            case 12:
+                buttons[fieldID].setBackgroundResource(R.drawable.b12);
+                break;
+            case 13:
+                buttons[fieldID].setBackgroundResource(R.drawable.b13);
+                break;
+        }
+
     }
 
 
@@ -185,13 +190,22 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             return false;
         }
         //You can only set flags if the game has started
+
         if (game_started) {
             int fieldID = Integer.parseInt(String.valueOf(v.getTag()));
             //Toggle flag
             if (game.gameBoard.size() > fieldID) {
                 Toast.makeText(getApplicationContext(), "You made a long press on button: " + fieldID, Toast.LENGTH_SHORT).show();
-                game.toggleFlag(fieldID);
-                buttons[fieldID].setBackgroundResource(R.drawable.b11);
+                int status = game.toggleFlag(fieldID);
+
+                int cell = game.gameBoard.get(fieldID).getFieldImgType(endGame);
+                changeImg(cell, fieldID);
+
+                if (status == 0) {
+                    //Spil vundet
+                    //stop spillet
+                    endGame = true;
+                }
             } else {
                 Toast.makeText(getApplicationContext(), "A long press on " + fieldID + "was registered," +
                         " but not accepted", Toast.LENGTH_SHORT).show();
