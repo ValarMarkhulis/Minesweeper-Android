@@ -26,6 +26,7 @@ public class Field {
         isShown = true;
     }
 
+
     public boolean isShown() {
         return isShown;
     }

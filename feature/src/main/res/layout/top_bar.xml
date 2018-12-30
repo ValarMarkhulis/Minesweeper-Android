@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Time: 15"
+        android:paddingTop="8dp"
+        android:text="Time: 0"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -22,7 +24,9 @@
         android:layout_weight="1"
         android:baselineAligned="false"
         android:gravity="center"
+        android:paddingTop="8dp"
         android:text="Flags set: 0"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 

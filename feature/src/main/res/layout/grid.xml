@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/BigBox"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
@@ -20,61 +20,61 @@
 
         <ImageButton
             android:id="@+id/field00"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field01"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field02"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field03"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field04"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field05"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field06"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field07"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field08"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field09"
-            android:layout_width="30dp"
+            android:layout_width="28dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
     </LinearLayout>

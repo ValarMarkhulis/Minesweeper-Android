@@ -1227,6 +1227,11 @@ public class Game {
         }
     }
 
+
     public enum direction {RIGHT, LEFT, DOWN, UP, NON, RIGHTUP, RIGHTDOWN, LEFTUP, LEFTDOWN}
 
+    public int getBoombsleft() {
+        return Boombsleft;
+    }
 }
+
