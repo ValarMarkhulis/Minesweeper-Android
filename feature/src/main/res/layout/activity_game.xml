@@ -9,18 +9,20 @@
     <include
         android:id="@+id/include1"
         layout="@layout/top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
 
     <include
         android:id="@+id/game"
         layout="@layout/grid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="490dp"
         android:layout_below="@+id/include1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="20dp" />
+
 
 </RelativeLayout>

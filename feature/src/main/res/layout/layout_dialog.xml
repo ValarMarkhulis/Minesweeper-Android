@@ -57,7 +57,7 @@
 
             <Button
                 android:id="@+id/dialog_button"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="49dp"
                 android:layout_marginStart="36dp"
                 android:paddingBottom="10dp"
@@ -70,7 +70,7 @@
 
             <Button
                 android:id="@+id/dialog_button2"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="49dp"
                 android:layout_marginEnd="36dp"
                 android:layout_toEndOf="@+id/dialog_button"

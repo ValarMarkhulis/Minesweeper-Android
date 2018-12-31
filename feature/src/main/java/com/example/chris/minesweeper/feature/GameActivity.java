@@ -2,6 +2,7 @@ package com.example.chris.minesweeper.feature;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -65,6 +66,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         if (savedInstanceState == null) {
             game = new Game();
             flagsetTextview = findViewById(R.id.flagSet);
@@ -83,7 +87,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         //Buttons are found by the Tag which is given to it in the for loop where the buttons[] is initiliazed.
-        Toast.makeText(getApplicationContext(), "You pressed on: " + String.valueOf(v.getTag()), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "You pressed on: " + String.valueOf(v.getTag()), Toast.LENGTH_SHORT).show();
         int number = 0;
 
         try {
@@ -282,7 +286,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             int fieldID = Integer.parseInt(String.valueOf(v.getTag()));
             //Toggle flag
             if (game.gameBoard.size() > fieldID) {
-                Toast.makeText(getApplicationContext(), "You made a long press on button: " + fieldID, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "You made a long press on button: " + fieldID, Toast.LENGTH_SHORT).show();
                 int status = game.toggleFlag(fieldID);
 
                 int cell = game.gameBoard.get(fieldID).getFieldImgType(endGame);

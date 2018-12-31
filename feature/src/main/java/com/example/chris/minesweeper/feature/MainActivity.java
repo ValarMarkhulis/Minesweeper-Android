@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(), "You have pressed on the highscore button", Toast.LENGTH_SHORT).show();
         } else if (v.getId() == R.id.button_exit) {
             Toast.makeText(getApplicationContext(), "You have pressed the exit button", Toast.LENGTH_SHORT).show();
+            finish();
+            System.exit(0);
         }
     }
 }

@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/BigBox"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_border"
     android:baselineAligned="false"
     android:orientation="vertical"
+    android:padding="5dp"
     android:weightSum="5">
 
     <LinearLayout
@@ -12,69 +14,67 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
         android:weightSum="3">
 
         <!--Row 0 -->
 
         <ImageButton
             android:id="@+id/field00"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field01"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field02"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field03"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field04"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field05"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field06"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field07"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field08"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
 
         <ImageButton
             android:id="@+id/field09"
-            android:layout_width="28dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/b0" />
     </LinearLayout>
@@ -84,8 +84,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 1 -->
 
@@ -165,8 +164,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 2 -->
 
@@ -246,8 +244,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 3 -->
 
@@ -327,8 +324,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 4 -->
 
@@ -407,8 +403,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 5 -->
 
@@ -488,8 +483,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 6 -->
 
@@ -569,8 +563,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 7 -->
 
@@ -650,8 +643,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 8 -->
 
@@ -731,8 +723,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 9 -->
 
@@ -812,8 +803,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 10 -->
 
@@ -893,8 +883,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 11 -->
 
@@ -974,8 +963,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 12 -->
 
@@ -1055,8 +1043,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 13 -->
 
@@ -1136,8 +1123,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 14 -->
 
@@ -1217,8 +1203,7 @@
         android:layout_height="30dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+
         android:weightSum="3">
         <!--Row 15 -->
 
