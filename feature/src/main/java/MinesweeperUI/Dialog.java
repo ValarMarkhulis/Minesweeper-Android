@@ -22,6 +22,7 @@ public class Dialog extends AppCompatDialogFragment {
 
     @Override
     public AlertDialog onCreateDialog(Bundle savedInstanceState) {
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.layout_dialog, null);
@@ -29,8 +30,11 @@ public class Dialog extends AppCompatDialogFragment {
         dialog_secondLine = view.findViewById(R.id.dialog_secondLine);
         dialog_thirdLine = view.findViewById(R.id.dialog_thirdLine);
 
+        //Setup the text of the first and second line
         dialog_firstLine.setText(getArguments().getString("first"));
         dialog_secondLine.setText(getArguments().getString("second"));
+
+        //The third line will only be visible and get text, if the player has lost the game
         if (getArguments().getString("third", "null").equals("null")) {
             dialog_thirdLine.setVisibility(View.INVISIBLE);
             dialog_firstLine.setTextColor(Color.GREEN);
@@ -50,7 +54,7 @@ public class Dialog extends AppCompatDialogFragment {
             public void onClick(View v) {
 
                 monButtonClick.retryButton(true);
-                getDialog().dismiss();
+                getDialog().dismiss(); //Destroy the dialog
             }
         });
         Button menu = view.findViewById(R.id.dialog_button2);
@@ -79,6 +83,8 @@ public class Dialog extends AppCompatDialogFragment {
         }
     }
 
+    //This interface is being implemented by the GameActivity.
+    //This is for communicating the players "button choice" to the GameActivity.
     public interface onButtonClick {
         void retryButton(boolean pressed);
     }

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     tools:context=".GameActivity">
 
     <include
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp" />
+        android:layout_marginTop="16dp" />
 
     <include
         android:id="@+id/game"
@@ -22,7 +23,27 @@
         android:layout_height="490dp"
         android:layout_below="@+id/include1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/gameboard_reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="4dp"
+        android:text="Restart" />
+
+    <Button
+        android:id="@+id/gameboard_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="69dp"
+        android:text="Menu" />
 
 
 </RelativeLayout>

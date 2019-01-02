@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="34dp"
-        android:text="15 bombs left"
+        android:text="You won, and beat the highscore"
         android:textColor="@color/colorAccent"
         android:textSize="18sp" />
 
@@ -33,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dialog_firstLine"
-        android:layout_marginStart="28dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="34dp"
-        android:layout_toEndOf="@+id/dialog_secondLine"
+        android:layout_marginEnd="20dp"
         android:text="15 bombs left"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
