@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Row_Height">30dp</string>
+    <string name="beat_highscore">You won, and beat the highscore</string>
+    <string name="bombs_left">15 bombs left</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_menu">Menu</string>
+    <string name="button_play">Play</string>
+    <string name="button_highscore">Highscore</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_restart">Restart</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

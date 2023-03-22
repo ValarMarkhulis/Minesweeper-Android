@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="34dp"
-        android:text="You won, and beat the highscore"
+        android:text="@string/beat_highscore"
         android:textColor="#d81b60"
         android:textSize="18sp" />
 
@@ -24,7 +24,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="34dp"
-        android:text="15 bombs left"
+        android:text="@string/bombs_left"
         android:textColor="#d81b60"
         android:textSize="18sp" />
 
@@ -36,7 +36,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="20dp"
-        android:text="15 bombs left"
+        android:text="@string/bombs_left"
         android:textColor="#d81b60"
         android:textSize="18sp"
         android:visibility="invisible" />
@@ -61,7 +61,7 @@
                 android:layout_height="49dp"
                 android:layout_marginStart="36dp"
                 android:paddingBottom="10dp"
-                android:text="Retry"
+                android:text="@string/button_retry"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +74,7 @@
                 android:layout_height="49dp"
                 android:layout_marginEnd="36dp"
                 android:layout_toEndOf="@+id/dialog_button"
-                android:text="Menu"
+                android:text="@string/button_menu"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
